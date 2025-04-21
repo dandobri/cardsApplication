@@ -1,0 +1,12 @@
+com.bankcardsystem
+├── config             # Безопасность, CORS, JWT
+├── controller         # REST API
+├── dto                # DTO-шки для запросов/ответов -- вроде сделано
+├── entity             # JPA-сущности -- вроде сделано
+├── enums              # CardStatus, Role и пр. -- вроде сделано
+├── exception          # Обработка ошибок
+├── repository         # JPA-репозитории
+├── security           # JWT utils, filters, AuthService
+├── service            # Бизнес-логика
+├── util               # Утилиты (шифрование, маскирование)
+└── BankCardApp.java   # main метод

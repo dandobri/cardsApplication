@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in with your account</title>
+</head>
+<body>
+
+<div id="loginForm">
+    <!-- Логика перенаправления, если пользователь уже аутентифицирован -->
+    <script>
+        // Пример проверки аутентификации (реальную проверку можно выполнить с помощью cookies, токенов или серверной логики)
+        const isAuthenticated = false; // Замените на реальную проверку аутентификации
+
+        if (isAuthenticated) {
+            window.location.href = "/"; // Редирект на главную, если пользователь уже аутентифицирован
+        }
+    </script>
+
+    <form method="POST" action="/login">
+        <h2>Вход в систему</h2>
+        <div>
+            <label>
+                <input name="email" type="text" placeholder="Email" autofocus="autofocus" required/>
+            </label>
+        </div>
+        <div>
+            <input name="password" type="password" placeholder="Password" required/>
+        </div>
+        <div>
+            <button type="submit">Log In</button>
+        </div>
+        <h4><a href="/registration">Зарегистрироваться</a></h4>
+    </form>
+</div>
+
+</body>
+</html>
