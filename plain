@@ -1,9 +1,9 @@
 com.bankcardsystem
 ├── config             # Безопасность, CORS, JWT
 ├── controller         # REST API
-├── dto                # DTO-шки для запросов/ответов -- вроде сделано
-├── entity             # JPA-сущности -- вроде сделано
-├── enums              # CardStatus, Role и пр. -- вроде сделано
+├── dto                # DTO-шки для запросов/ответов
+├── entity             # JPA-сущности
+├── enums              # CardStatus, Role и пр.
 ├── exception          # Обработка ошибок
 ├── repository         # JPA-репозитории
 ├── security           # JWT utils, filters, AuthService
